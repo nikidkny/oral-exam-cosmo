@@ -1,0 +1,246 @@
+.ticketpage {
+  padding: 1.5rem;
+  display: grid;
+  justify-items: center;
+  max-width: 100%;
+  object-fit: contain;
+}
+.ticketSec,
+.camping,
+.extras {
+  display: grid;
+}
+.steps {
+  display: flex;
+  justify-content: space-between;
+}
+.ticketboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.VIPticketbox {
+  border: solid var(--green2) 2px;
+  background-color: var(--green2);
+  color: var(--black);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.REGticketbox {
+  border: solid var(--yellow) 2px;
+  background-color: var(--yellow);
+  color: var(--black);
+
+  border-radius: 10px;
+  padding: 1rem;
+}
+.VIPticketlayout,
+.REGticketlayout {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.campingAreas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.areascontainer {
+  display: flex;
+  flex-direction: column;
+  border: solid var(--turquoise) 2px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.extras {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+.camping {
+  padding: 1rem 0;
+}
+.green,
+.renthelpbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.green label {
+  width: 20%;
+}
+.checkboxContainer {
+  width: 20%;
+  text-align: right;
+}
+.disabled {
+  text-decoration: line-through 1px solid var(--green2);
+}
+.floatingBasket {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  background-color: var(--turquoise);
+  border: transparent 1px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.floatingBasket img {
+  position: relative;
+  z-index: 0;
+}
+.floatingBasket span {
+  color: var(--darkorange);
+  font-size: 2.5rem;
+  font-weight: 900;
+  position: absolute;
+  padding-top: 2rem;
+  z-index: 1;
+}
+.closebasket {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  background-color: var(--turquoise);
+  border: transparent 1px;
+  border-radius: 50px;
+}
+.hide {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  border-radius: 50px;
+}
+.detail {
+  font-size: small;
+}
+.basketpop {
+  border: 2px solid var(--purple);
+  border-radius: 10px;
+  padding: 1rem;
+  display: grid;
+  position: relative;
+  /* width: 50%; */
+  /* left: 22rem; */
+  padding-bottom: 5rem;
+}
+.totalorderbasket,
+.fixedorderbasket,
+.subtotalorderbasket,
+.tent3orderbasket,
+.tent2orderbasket,
+.greenorderbasket,
+.campingorderbasket,
+.ticketorderbasket,
+.ticketamountbasket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ordersummary {
+  border: 2px solid var(--purple);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.personalcardlayout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.basketpop h3,
+.basketpop h4,
+.personalcardlayout h3,
+.personalcardlayout h4 {
+  text-decoration: underline;
+}
+.infoform {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+.personalformlayout {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 2rem;
+  border: solid 2px var(--turquoise);
+  border-radius: 10px;
+}
+.legend {
+  color: var(--turquoise);
+}
+.labels {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.infoform input,
+.payment input {
+  background-color: transparent;
+  border: var(--white) 1px solid;
+  padding: 0.75rem;
+}
+.paymentformlayout {
+  padding: 2rem;
+  border: solid 2px var(--turquoise);
+  border-radius: 10px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  margin-bottom: 1rem;
+}
+.button {
+  background-color: transparent;
+  border: 2px solid var(--pink);
+  color: var(--pink);
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  min-width: 150px;
+}
+.button:hover {
+  background-color: var(--pink);
+  color: var(--black);
+}
+.thanks {
+  border: 2px solid var(--purple);
+  padding: 2rem;
+  border-radius: 10px;
+  background-image: url("../public/festivalLanding.jpg");
+  width: 500px;
+  height: 300px;
+}
+.thanks h2 {
+  padding-bottom: 2rem;
+}
+.buttonthanks {
+  background-color: var(--black);
+  border: 2px solid var(--pink);
+  color: var(--pink);
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.buttonthanks:hover {
+  background-color: var(--pink);
+  color: var(--black);
+}
+@media screen and (min-width: 1000px) {
+}

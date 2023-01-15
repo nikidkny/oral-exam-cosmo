@@ -30,7 +30,8 @@ export default function Personalinfo({ seconds }) {
   const fullfillres = useRef();
 
   async function fullfillReservation() {
-    const url = "https://localhost:8000";
+    // const url = "https://localhost:8000";
+    const url = "https://bitter-moon-5524.fly.dev";
     const url2 = "https://udfchraccrfladlsvbzh.supabase.co";
     const bookedTicket = {};
     const res = await fetch(url + "/fullfill-reservation", {
